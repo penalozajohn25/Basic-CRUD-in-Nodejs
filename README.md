@@ -39,11 +39,16 @@ http://localhost:3000/
 ]
 
 
+
+
+
+
 ### Add Users
 | Method  | Enpoint | Params |  |
 | ------------- | ------------- | ------------- |
 | POST | `users` | name, email | 
 
+body:
 {
     "name":"Ray",
     "email": "raySanchez@google.com"
@@ -63,6 +68,8 @@ http://localhost:3000/
 }
 
 
+
+
 ### Get Users by Id
 | Method  | Enpoint | Params |  |
 | ------------- | ------------- | ------------- |
@@ -79,6 +86,9 @@ http://localhost:3000/
     }
 ]
 
+
+
+
 ### Delete Users
 | Method  | Enpoint | Params |  |
 | ------------- | ------------- | ------------- |
@@ -89,15 +99,29 @@ http://localhost:3000/
 
 "User ID Deleted Succesfully"
 
+
+
+
+
 ### Update Users
 | Method  | Enpoint | Params |  |
 | ------------- | ------------- | ------------- |
 | UPDATE | `users/:id` | id, name, email | 
 
 
+body:
+{
+    "name":"joe",
+    "email": "joe@ibm.com"
+}
+
 ### Outputs
 
 "User Updated Succesfully"
+
+
+
+
 
 
 ### Database in Postgres
